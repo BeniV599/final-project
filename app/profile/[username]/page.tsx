@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
-import { getUserByUsername } from '../../database/users';
+import { Sql } from 'postgres';
+import { getUserByUsername } from '../../../database/users';
 
 type Props = {
   params: { username: string };

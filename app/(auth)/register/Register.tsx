@@ -2,10 +2,8 @@
 
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { RegisterResponseBodyPost } from '../../api/(auth)/register/route';
 import styles from './Register.module.scss';
-
-// import { RegisterResponseBodyPost } from '../../api/(auth)/register/route';
-// import styles from './Register.module.scss';
 
 export default function Register() {
   const [username, setUsername] = useState('');
@@ -35,20 +33,24 @@ export default function Register() {
   return (
     <form onSubmit={(event) => event.preventDefault()}>
       <label>
-        Username:
+        Username
+        <br />
         <input
           value={username}
           onChange={(event) => setUsername(event.currentTarget.value)}
         />
       </label>
+      <br />
       <label>
-        Password:
+        Password
+        <br />
         <input
           type="password"
           value={password}
           onChange={(event) => setPassword(event.currentTarget.value)}
         />
       </label>
+      <br />
       <button className={styles.button} onClick={async () => await register()}>
         Sign Up!
       </button>

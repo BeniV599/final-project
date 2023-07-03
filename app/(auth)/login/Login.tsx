@@ -3,11 +3,9 @@
 import { Route } from 'next';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { getSafeReturnToPath } from '../../../util/validation';
+import { LoginResponseBodyPost } from '../../api/(auth)/login/route';
 import styles from './Login.module.scss';
-
-// import { getSafeReturnToPath } from '../../../util/validation';
-// import { LoginResponseBodyPost } from '../../api/(auth)/login/route';
-// import styles from './Login.module.scss';
 
 type Props = { returnTo?: string | string[] };
 
@@ -42,20 +40,22 @@ export default function Login(props: Props) {
   return (
     <form onSubmit={(event) => event.preventDefault()}>
       <label>
-        username:
         <input
+          placeholder="Username"
           value={username}
           onChange={(event) => setUsername(event.currentTarget.value)}
         />
       </label>
+      <br />
       <label>
-        password:
         <input
+          placeholder="Password"
           value={password}
           type="password"
           onChange={(event) => setPassword(event.currentTarget.value)}
         />
       </label>
+      <br />
       <button className={styles.button} onClick={async () => await login()}>
         Log In
       </button>
