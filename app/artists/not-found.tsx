@@ -1,4 +1,4 @@
-export const artistsNotFoundMetadata = {
+export const albumsNotFoundMetadata = {
   title: 'Not Found',
   description: "Sorry, can't find the page you're looking for. :/",
 };

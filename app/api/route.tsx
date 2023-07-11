@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
 
-export function GET(): NextResponse<{ albums: string }> {
-  return NextResponse.json({ albums: '/api/albums' });
+export function GET(): NextResponse<{ artists: string }> {
+  return NextResponse.json({ artists: '/api/artists' });
 }

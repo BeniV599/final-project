@@ -6,7 +6,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export default async function AlbumsLayout(props: Props) {
+export default async function ArtistsLayout(props: Props) {
   const headersList = headers();
 
   // 1. Check if the sessionToken cookie exit
