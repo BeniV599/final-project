@@ -4,27 +4,20 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: #00c6c2;
+  color: #1ffff8;
   background: no-repeat center center fixed;
   background-size: cover;
   background-image: linear-gradient(
-    to bottom,
-    #1d0c0c,
-    #1c0a0e,
-    #1b0811,
-    #190714,
-    #160616,
-    #130616,
-    #0f0616,
-    #0b0616,
-    #080614,
-    #050612,
-    #030610,
-    #02050d
+    to right top,
+    #ae0044,
+    #db4433,
+    #f58109,
+    #f7c000,
+    #deff00
   );
 }
 body {
-  margin: 0 300px;
+  margin: 0 200px;
   font-size: 1rem;
   padding: 24px;
   h1 {
@@ -33,9 +26,9 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: #a6a8cd;
+    color: #000222;
   }
-  .link {
+  header {
     font-weight: 800;
     gap: 3rem;
     display: flex;
@@ -48,5 +41,8 @@ body {
         color: #f0616f;
       }
     }
+  }
+  footer {
+    color: #b8ff66;
   }
 }

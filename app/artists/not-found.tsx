@@ -1,9 +1,9 @@
-export const rootNotFoundMetadata = {
+export const artistsNotFoundMetadata = {
   title: 'Not Found',
   description: "Sorry, can't find the page you're looking for. :/",
 };
 
-export default function RootNotFound() {
+export default function ArtistsNotFound() {
   return (
     <div className="not-found">
       <p>

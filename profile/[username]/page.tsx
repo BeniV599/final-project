@@ -14,8 +14,8 @@ export default async function ProfileUsernamePage({ params }: Props) {
 
   return (
     <>
-      <div>id: {user.id}</div>
-      <div>username: {user.username}</div>
+      <div>ID number: {user.id}</div>
+      <div>Username: {user.username}</div>
     </>
   );
 }
