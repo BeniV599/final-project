@@ -3,7 +3,8 @@ import { Sql } from 'postgres';
 export type Artist = {
   id: number;
   name: string;
-  url: string;
+  soundcloud: string;
+  description: string;
 };
 
 export async function up(sql: Sql) {
@@ -11,7 +12,8 @@ export async function up(sql: Sql) {
     CREATE TABLE artists (
       id integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
       name varchar(50) NOT NULL,
-      url varchar(100)
+      soundcloud varchar(100) NOT NULL,
+      description varchar(5000)
     )
   `;
 }

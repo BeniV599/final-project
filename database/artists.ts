@@ -21,25 +21,28 @@ export const getArtistById = cache(async (id: number) => {
   return artist;
 });
 
-export const createArtist = cache(async (name: string, url: string) => {
-  const [artist] = await sql<Artist[]>`
+export const createArtist = cache(
+  async (name: string, soundcloud: string, description: string) => {
+    const [artist] = await sql<Artist[]>`
       INSERT INTO artists
-        (name, url)
+        (name, soundcloud, description)
       VALUES
-        (${name},${url})
+        (${name}, ${soundcloud}, ${description})
       RETURNING *
     `;
 
-  return artist;
-});
+    return artist;
+  },
+);
 
 export const updateArtistById = cache(
-  async (id: number, name: string, url: string) => {
+  async (id: number, name: string, soundcloud: string, description: string) => {
     const [artist] = await sql<Artist[]>`
       UPDATE artists
       SET
         name = ${name},
-        url = ${url},
+        soundcloud = ${soundcloud},
+        description = ${description},
       WHERE
         id = ${id}
         RETURNING *

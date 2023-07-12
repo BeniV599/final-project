@@ -4,8 +4,6 @@ import { getArtists } from '../../database/artists';
 
 console.log(getArtists);
 
-export const dynamic = 'force-dynamic';
-
 export const fetchArtists = {
   title: 'Drum and Bass Artists',
   description:
@@ -20,7 +18,6 @@ export default async function Artists() {
       {artists.map((artist) => {
         return (
           <div key={`artist-div-${artist.id}`}>
-            <h2>{artist.name}</h2>
             <Link href={`/artists/${artist.id}`}>
               <Image
                 src={`/images/${artist.name}.jpg`}
@@ -29,6 +26,7 @@ export default async function Artists() {
                 alt={artist.name}
               />
             </Link>
+            <h2>{artist.name}</h2>
           </div>
         );
       })}

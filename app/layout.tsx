@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google';
 import { cookies } from 'next/headers';
 import Link from 'next/link';
 import { ReactNode } from 'react';
-// import { useDarkMode } from 'usehooks-ts';
 import { getUserBySessionToken } from '../database/users';
 import { Logout } from './Logout';
 
@@ -25,7 +24,6 @@ type Props = {
 export default async function RootLayout({ children }: Props) {
   const cookieStore = cookies();
   const sessionToken = cookieStore.get('sessionToken');
-  // const { isDarkMode, toggle, enable, disable } = useDarkMode();
 
   const user = !sessionToken?.value
     ? undefined
@@ -47,15 +45,11 @@ export default async function RootLayout({ children }: Props) {
               </>
             ) : (
               <>
-                <Link href="/register">Sign Up!</Link>
                 <Link href="/login">Log In</Link>
+                <Link href="/register">Sign Up!</Link>
               </>
             )}
           </div>
-          {/* <p>Current theme: {isDarkMode ? 'dark' : 'light'}</p>
-          <button onClick={toggle}>Toggle</button>
-          <button onClick={enable}>Enable</button>
-          <button onClick={disable}>Disable</button> */}
         </header>
         {children}
         <footer>@ 2023 BCV Final Project</footer>

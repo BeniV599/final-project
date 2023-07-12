@@ -33,7 +33,7 @@ export default function Register() {
   return (
     <form onSubmit={(event) => event.preventDefault()}>
       <label>
-        Username
+        New username
         <br />
         <input
           value={username}
@@ -42,7 +42,7 @@ export default function Register() {
       </label>
       <br />
       <label>
-        Password
+        New password
         <br />
         <input
           type="password"
