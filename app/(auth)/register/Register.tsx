@@ -31,11 +31,12 @@ export default function Register() {
   }
 
   return (
-    <form onSubmit={(event) => event.preventDefault()}>
+    <form className="registerPage" onSubmit={(event) => event.preventDefault()}>
       <label>
         New username
         <br />
         <input
+          className="input"
           value={username}
           onChange={(event) => setUsername(event.currentTarget.value)}
         />
@@ -45,6 +46,7 @@ export default function Register() {
         New password
         <br />
         <input
+          className="input"
           type="password"
           value={password}
           onChange={(event) => setPassword(event.currentTarget.value)}

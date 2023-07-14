@@ -2,47 +2,197 @@
 ::before,
 ::after {
   margin: 0;
-  box-sizing: border-box;
   text-decoration: none;
-  color: #1ffff8;
-  background: no-repeat center center fixed;
-  background-size: cover;
-  background-image: linear-gradient(
-    to right top,
-    #ae0044,
-    #db4433,
-    #f58109,
-    #f7c000,
-    #deff00
-  );
+  box-sizing: border-box;
 }
-body {
-  margin: 0 200px;
-  font-size: 1rem;
-  padding: 24px;
-  h1 {
+header {
+  position: relative;
+  padding: 25px;
+  width: 100%;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  background-color: #999999;
+  justify-content: space-between;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  a {
+    font-size: 20px;
+    padding: 0 48px;
+    color: #cccccc;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  .logOut {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    .userName {
+      font-size: 24px;
+      color: #111111;
+      padding-right: 48px;
+    }
+  }
+}
+
+body {
+  flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  margin: 0 100px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f2f2f2;
+
+  h1 {
+    background-color: #ff7700;
+    border-radius: 45px;
+    color: #000000;
+    padding: 40px 0;
+    margin: 80px 320px;
     font-size: 3rem;
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: #000222;
   }
-  header {
-    font-weight: 800;
-    gap: 3rem;
+
+  .input {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex-start;
+    flex-direction: column;
+    border: none;
+    padding: 22px 20px;
+    width: 360px;
+    border-radius: 10px;
+  }
+
+  .registerPage {
+    width: 30%;
+    margin: auto;
     display: flex;
+    padding: 40px;
+    font-size: 20px;
+    border-radius: 50px;
     align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    a {
-      color: #fff4f4;
-      &:hover {
-        color: #f0616f;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #adadad;
+  }
+
+  .loginPage {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    padding: 40px;
+    border-radius: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #adadad;
+  }
+
+  .introduction {
+    display: flex;
+    padding: 20px;
+    margin: 0 360px;
+    flex-direction: column;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .artistContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+    .artistImages {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .artistName {
+        border-radius: 180px;
       }
     }
   }
-  footer {
-    color: #b8ff66;
+
+  .container {
+    display: flex;
   }
+
+  .profile {
+    display: flex;
+    align-items: left;
+    border-radius: 30px;
+    justify-content: left;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    padding: 0 68px;
+    color: f2f2f2;
+    text-align: start;
+    justify-content: center;
+  }
+
+  .logIn {
+    color: #db5000;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  .register {
+    padding: 10px 48px;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+    color: #fdd1bb;
+    background-color: #ff5500;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #8f3000;
+    }
+  }
+
+  .link {
+    display: flex;
+    padding: 24px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .linkLogo {
+    margin-left: 20px;
+    &:hover {
+      color: #3388dd;
+    }
+  }
+
+  h2 {
+    color: #dd9700;
+    padding: 20px;
+  }
+}
+footer {
+  position: relative;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+  padding: 30px;
+  font-weight: bold;
+  background-color: #999999;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }

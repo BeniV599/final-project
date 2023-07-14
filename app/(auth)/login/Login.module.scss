@@ -1,15 +1,18 @@
 .button {
-  border: 2px solid #00acca;
-  background-color: #004e2e;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 30px;
+  background-color: #ff6711;
   border-radius: 45px;
+  border: none;
   cursor: pointer;
-  color: #beffe4;
+  color: #7b4a00;
 
   &:hover {
-    background-color: #beffe4;
-    color: #004e2e;
+    color: #ffffff;
   }
 }
+
 .error {
   background-color: #d3003f;
 }

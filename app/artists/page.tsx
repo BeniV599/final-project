@@ -12,24 +12,28 @@ export const fetchArtists = {
 
 export default async function Artists() {
   const artists = await getArtists();
+
   return (
     <main>
-      <h1>Welcome to my soon-to-be-not-so-blank page, y'all! ;3</h1>
-      {artists.map((artist) => {
-        return (
-          <div key={`artist-div-${artist.id}`}>
-            <Link href={`/artists/${artist.id}`}>
-              <Image
-                src={`/images/${artist.name}.jpg`}
-                width={300}
-                height={300}
-                alt={artist.name}
-              />
-            </Link>
-            <h2>{artist.name}</h2>
-          </div>
-        );
-      })}
+      <h1>My favorite D&B producers</h1>
+      <div className="artistContainer">
+        {artists.map((artist) => {
+          return (
+            <div className="artistImages" key={`artist-div-${artist.id}`}>
+              <Link href={`/artists/${artist.id}`}>
+                <Image
+                  className="artistName"
+                  src={`/images/${artist.name}.jpg`}
+                  width={300}
+                  height={300}
+                  alt={artist.name}
+                />
+              </Link>
+              <h2>{artist.name}</h2>
+            </div>
+          );
+        })}
+      </div>
     </main>
   );
 }

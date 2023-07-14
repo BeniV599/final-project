@@ -32,27 +32,31 @@ export default async function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="link">
+        <header>
           <div>
             <Link href="/">Home</Link>
             <Link href="/artists">Artists</Link>
           </div>
           <div>
             {user ? (
-              <>
-                <div>{user.username}</div>
+              <div className="logOut">
+                <div className="userName">{user.username}</div>
                 <Logout />
-              </>
+              </div>
             ) : (
               <>
-                <Link href="/login">Log In</Link>
-                <Link href="/register">Sign Up!</Link>
+                <Link className="logIn" href="/login">
+                  Log In
+                </Link>
+                <Link className="register" href="/register">
+                  Register
+                </Link>
               </>
             )}
           </div>
         </header>
         {children}
-        <footer>@ 2023 BCV Final Project</footer>
+        <footer>@ 2023 Dnb Nation: Dedication</footer>
       </body>
     </html>
   );

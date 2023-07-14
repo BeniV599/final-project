@@ -35,9 +35,10 @@ export default function Login(props: Props) {
   }
 
   return (
-    <form onSubmit={(event) => event.preventDefault()}>
+    <form className="loginPage" onSubmit={(event) => event.preventDefault()}>
       <label>
         <input
+          className="input"
           placeholder="Username"
           value={username}
           onChange={(event) => setUsername(event.currentTarget.value)}
@@ -46,6 +47,7 @@ export default function Login(props: Props) {
       <br />
       <label>
         <input
+          className="input"
           placeholder="Password"
           value={password}
           type="password"
