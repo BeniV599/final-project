@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: {
-    default: 'BCV Final Project',
+    default: 'DnB Nation: Dedication',
     template: '%s | Home',
   },
   description:
