@@ -5,9 +5,10 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+
 header {
   position: relative;
-  padding: 25px;
+  padding: 20px;
   width: 100%;
   display: flex;
   font-weight: bold;
@@ -21,20 +22,60 @@ header {
     font-size: 20px;
     padding: 0 48px;
     color: #cccccc;
+    cursor: pointer;
+
     &:hover {
       color: #ffffff;
     }
   }
+
   .logOut {
     display: flex;
     align-items: center;
     justify-content: center;
+
     .userName {
-      font-size: 24px;
+      font-size: 20px;
       color: #111111;
-      padding-right: 48px;
+      padding-right: 50px;
     }
   }
+
+  .logIn {
+    color: #db5000;
+    cursor: pointer;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  .register {
+    padding: 10px 48px;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+    color: #fdd1bb;
+    background-color: #ff5500;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #8f3000;
+    }
+  }
+}
+
+h1 {
+  position: relative;
+  background-color: #ff7700;
+  border-radius: 45px;
+  color: #000000;
+  padding: 30px 0;
+  margin: 30px 320px;
+  font-size: 3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -45,18 +86,6 @@ body {
   font-size: 1rem;
   font-weight: bold;
   background-color: #f2f2f2;
-
-  h1 {
-    background-color: #ff7700;
-    border-radius: 45px;
-    color: #000000;
-    padding: 40px 0;
-    margin: 40px 320px;
-    font-size: 3rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
 
   .input {
     margin-top: 10px;
@@ -75,8 +104,7 @@ body {
     margin: auto;
     display: flex;
     padding: 40px;
-    font-size: 20px;
-    border-radius: 50px;
+    border-radius: 45px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +116,7 @@ body {
     margin: auto;
     display: flex;
     padding: 40px;
-    border-radius: 50px;
+    border-radius: 45px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -97,8 +125,8 @@ body {
 
   .introduction {
     display: flex;
-    padding: 10px;
-    margin: 0 220px;
+    padding: 60px 220px;
+    margin: 0 auto;
     flex-direction: column;
     letter-spacing: 2px;
     word-spacing: 6px;
@@ -144,28 +172,6 @@ body {
     justify-content: center;
   }
 
-  .logIn {
-    color: #db5000;
-
-    &:hover {
-      color: #ffffff;
-    }
-  }
-
-  .register {
-    padding: 10px 48px;
-    border-radius: 45px;
-    border: none;
-    cursor: pointer;
-    color: #fdd1bb;
-    background-color: #ff5500;
-
-    &:hover {
-      color: #ffffff;
-      background-color: #8f3000;
-    }
-  }
-
   .link {
     display: flex;
     padding: 24px;
@@ -173,6 +179,7 @@ body {
     align-items: center;
     justify-content: center;
   }
+
   .linkLogo {
     margin-left: 20px;
     &:hover {
