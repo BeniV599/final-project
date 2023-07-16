@@ -5,17 +5,11 @@ export default function Homepage() {
       <div className="introduction">
         Welcome!
         <br />
-        This is the place where it's dedicating
         <br />
-        the few of my favorite artists from
+        This is the place where it's dedicating the few of my favorite artists
+        from all around the world that not only shaped me & my views on music,
+        but also shaped throughout its musical culture & history.
         <br />
-        all around the world that not only
-        <br />
-        shaped me & my views on music,
-        <br />
-        but also shaped throughout its
-        <br />
-        musical culture & history.
         <br />I hope you enjoy my website visit!
       </div>
     </main>
