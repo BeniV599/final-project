@@ -25,9 +25,21 @@ My final project would be a dedicating few of my favorite music producers showca
 
 #### Final look
 
+![Screenshot 2023-07-16 180339](https://github.com/BeniV599/final-project/assets/130893174/6647dab6-5f78-4b8e-bdc4-02156bdb3c78)
+![Screenshot 2023-07-16 180347](https://github.com/BeniV599/final-project/assets/130893174/e908671d-b816-48cd-8fb0-792a620a3fec)
+![Screenshot 2023-07-16 180623](https://github.com/BeniV599/final-project/assets/130893174/5b24aa31-837e-49d2-bd37-f3754bb2287f)
+![Screenshot 2023-07-16 180754](https://github.com/BeniV599/final-project/assets/130893174/2d227933-94e9-42bc-a52a-3451295d2052)
+![Screenshot 2023-07-16 180818](https://github.com/BeniV599/final-project/assets/130893174/02e8d91c-ca91-46ed-b77a-be73bfc414d1)
+![Screenshot 2023-07-16 180944](https://github.com/BeniV599/final-project/assets/130893174/be8fb6cc-9730-46ca-a14c-cd921d8ee05c)
+![Screenshot 2023-07-16 181046](https://github.com/BeniV599/final-project/assets/130893174/531d8b40-a170-4d48-977b-79c2c06f24d6)
+
 #### Prototyping
 
+![final-project_figma](https://github.com/BeniV599/final-project/assets/130893174/80c0a672-5d57-4c71-8697-9ea38d9f419d)
+
 #### Database schema
+
+![final-project_drawsql](https://github.com/BeniV599/final-project/assets/130893174/90c40d36-fdf7-420b-949f-ccc16a02a5e5)
 
 ## Setting up the project
 
